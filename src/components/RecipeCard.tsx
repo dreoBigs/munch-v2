@@ -52,7 +52,7 @@ export const RecipeCard = ({ recipe = defaultRecipe }: RecipeCardProps) => {
 
   return (
     // For UI testing, you might temporarily remove the Link or point it to "#"
-    // <Link to={`/recipe/${displayRecipe.id}`} className="block group">
+    <Link to={`/recipe/${displayRecipe.id}`} className="block group">
     <div className="block group w-full max-w-sm mx-auto"> {/* For isolated testing, add width constraints */}
       <Card className="recipe-card overflow-hidden h-full flex flex-col group-hover:shadow-xl transition-shadow duration-300">
         <div className="aspect-video relative overflow-hidden">
@@ -88,6 +88,6 @@ export const RecipeCard = ({ recipe = defaultRecipe }: RecipeCardProps) => {
         </CardContent>
       </Card>
     </div>
-    // </Link>
+    </Link>
   );
 };
